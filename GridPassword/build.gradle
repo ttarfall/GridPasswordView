@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: "maven"
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "http://172.17.16.23:8088/repository/com.ucsmy.app/") {
+            authentication(userName: "ucsmyapp", password: "ucsmyapp")
+        }
+        pom.version = "1.0.0"
+        pom.artifactId = "UCSGridPasswordView"
+        pom.groupId = "com.ucsmy.app"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    testCompile 'junit:junit:4.12'
+}
