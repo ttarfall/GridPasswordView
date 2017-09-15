@@ -22,9 +22,7 @@ android {
 }
 uploadArchives {
     repositories.mavenDeployer {
-        repository(url: "http://maven.aliyun.com/nexus/content/groups/public/") {
-            authentication(userName: "nexus-aliyun", password: "*")
-        }
+        repository(url: "http://maven.aliyun.com/nexus/content/groups/public")
         pom.version = "1.0.0"
         pom.artifactId = "GridPasswordView"
         pom.groupId = "com.ttarfall.gridpassword"
