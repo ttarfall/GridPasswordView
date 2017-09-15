@@ -1,6 +1,6 @@
 # GridPasswordView
 
-运行效果图：    
+## 运行效果图：    
 
 ![运行效果图](https://github.com/ttarfall/GridPasswordView/blob/master/gif/Gif_174742.gif?raw=true)
 
@@ -15,6 +15,8 @@
 * 根据android的inputType类型来确认
 
 * 增加闪动光标，可自定义样式
+
+![运行效果图](https://github.com/ttarfall/GridPasswordView/blob/master/gif/GridPassWordViewDemo.png?raw=true)
 
 xml：
 ```
@@ -32,3 +34,8 @@ xml：
         app:gpLineWidth="2dp"
         app:gpPasswordLength="6" />
 ```
+
+## 最后再贴一张效果图
+![运行效果图](https://github.com/ttarfall/GridPasswordView/blob/master/gif/Gif_175028.gif?raw=true)
+
+有问题可以留言保证及时更新
