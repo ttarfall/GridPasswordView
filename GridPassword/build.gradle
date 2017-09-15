@@ -22,12 +22,12 @@ android {
 }
 uploadArchives {
     repositories.mavenDeployer {
-        repository(url: "http://172.17.16.23:8088/repository/com.ucsmy.app/") {
-            authentication(userName: "ucsmyapp", password: "ucsmyapp")
+        repository(url: "http://maven.aliyun.com/nexus/content/groups/public/") {
+            authentication(userName: "nexus-aliyun", password: "*")
         }
         pom.version = "1.0.0"
-        pom.artifactId = "UCSGridPasswordView"
-        pom.groupId = "com.ucsmy.app"
+        pom.artifactId = "GridPasswordView"
+        pom.groupId = "com.ttarfall.gridpassword"
     }
 }
 
