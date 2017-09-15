@@ -6,7 +6,7 @@
 
 这里是继承TextView实现，相对来说性能非常好
 
-同事做了适配，保证 **[GridPasswordView](https://github.com/ttarfall/GridPasswordView) ** 保证适配
+同事做了适配，保证 ** [GridPasswordView](https://github.com/ttarfall/GridPasswordView) ** 保证适配
 
 * 对于一些变态的需求要求每个密码框式正方形也做了适配
 
