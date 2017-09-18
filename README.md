@@ -38,4 +38,6 @@ xml：
 ## 最后再贴一张效果图
 ![运行效果图](https://github.com/ttarfall/GridPasswordView/blob/master/gif/Gif_175028.gif?raw=true)
 
-有问题可以留言保证及时更新
+附上blog地址：http://blog.csdn.net/qq_24641847/article/details/78016275
+
+欢迎大家体验使用，如有建议，可及时提示更新
