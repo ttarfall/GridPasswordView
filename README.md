@@ -20,7 +20,7 @@
 
 xml：
 ```
- <com.ucsmy.gridpassword.UCSGridPasswordView
+ <com.ttarfall.gridpassword.UCSGridPasswordView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
