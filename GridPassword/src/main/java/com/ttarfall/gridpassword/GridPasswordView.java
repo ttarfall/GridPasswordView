@@ -35,7 +35,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.TextView;
 
 import com.ttarfall.gridpassword.R;
 
@@ -43,7 +42,7 @@ import com.ttarfall.gridpassword.R;
  * @author ttarfall
  * @date 2017-08-30 17:43
  */
-public class GridPasswordView extends TextView {
+public class GridPasswordView extends AppCompatTextView {
 
     private static final String TAG = "GridPasswordView";
     private final int DEFAULT_PASSWORD_LENGTH = 6;//默认密码长度
@@ -244,9 +243,9 @@ public class GridPasswordView extends TextView {
             final float textWidth;
             boolean pwdFlag = !isPasswordInputType(getInputType());
             if (pwdFlag) {
-                textWidth = textPaint.measureText(DEFAULT_TRANSFORMATION);
-            } else {
                 textWidth = textPaint.measureText(pwd.subSequence(0, 1).toString());
+            } else {
+                textWidth = textPaint.measureText(DEFAULT_TRANSFORMATION);
             }
             canvas.save();
             for (int i = 0; i < pwd.length(); i++) {
